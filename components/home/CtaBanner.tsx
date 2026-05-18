@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 interface CtaBannerProps {
-  onContribute: () => void
+  onContribute: () => void;
 }
 
 export function CtaBanner({ onContribute }: CtaBannerProps) {
@@ -9,21 +9,23 @@ export function CtaBanner({ onContribute }: CtaBannerProps) {
     <div
       className="relative text-center px-[8vw] py-20 overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #0F172A 0%, #1a0505 50%, #2d0a0a 100%)',
+        background:
+          "linear-gradient(135deg, #0F172A 0%, #1a0505 50%, #2d0a0a 100%)",
       }}
     >
-      {/* Dot texture */}
+      {}
       <div className="absolute inset-0 dot-texture-sm pointer-events-none" />
 
       <div className="relative z-10">
         <h2
           className="font-serif font-bold text-white mb-4"
-          style={{ fontSize: 'clamp(28px, 4vw, 48px)' }}
+          style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
         >
           Bạn có ký ức lịch sử muốn chia sẻ?
         </h2>
         <p className="text-base text-white/60 max-w-[500px] mx-auto mb-9">
-          Đóng góp tư liệu, câu chuyện và hình ảnh để cùng xây dựng kho di sản số Việt Nam.
+          Đóng góp tư liệu, câu chuyện và hình ảnh để cùng xây dựng kho di sản
+          số Việt Nam.
         </p>
         <button
           onClick={onContribute}
@@ -34,5 +36,5 @@ export function CtaBanner({ onContribute }: CtaBannerProps) {
         </button>
       </div>
     </div>
-  )
+  );
 }

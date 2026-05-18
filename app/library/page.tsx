@@ -22,7 +22,7 @@ export default function LibraryPage() {
       <MobileCtaBar onClick={open} />
 
       <main className="pb-14 md:pb-0">
-        {/* Page header */}
+        {}
         <div className="relative bg-navy px-[8vw] pt-[120px] pb-16 overflow-hidden">
           <div className="absolute inset-0 dot-texture pointer-events-none" />
           <p className="relative text-xs text-white/35 tracking-[0.05em] mb-5">
@@ -42,7 +42,7 @@ export default function LibraryPage() {
 
         <FilterBar />
 
-        {/* Content */}
+        {}
         <div className="bg-cream px-[8vw] py-12">
           <FeaturedCard post={featured} />
 
